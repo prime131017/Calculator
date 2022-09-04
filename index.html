@@ -9,16 +9,58 @@
 <body>
     <form>
         <p>Введите первое значение:</p>
-        <input type="value" id="value1"><br><br>
-        <select>
-            <option label="Выберите действие"></option>Выберите действие</option>
-            <option value="plus">+</option>
-            <option value="minus">-</option>
-            <option value="multiplication">*</option>
-            <option value="division">/</option>
-        </select>
+        <input id="value1"><br><br>
+        <p>Выберите действия:</p>
+        <input id="sign">
         <p>Введите второе значение:</p>
-        <input type="value" id="value2">
+        <input id="value2"><br><br>
+        <button onclick="func()">Равно</button>
+        <p id= "result"></p>
     </form>
+    <script>
+        function func(){
+            let value1 = Number(document.getElementById("value1").value);
+            let value2 = Number(document.getElementById("value2").value);
+            let sign = String(document.getElementById("sign").value);
+            let result;
+            if(sign == '+'){
+                return result = value1 + value2;
+            }else if(sign == '-'){
+                return result = value1 - value2;
+            }else if(sign == '*'){
+                return result = value1 * value2;
+            }else if(sign == '/'){
+                return result = value1 / value2;
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+
+
+
+
+
+
+   <!-- <input id="num1"/>
+    <p>+</p>
+    <input id="num2"/>
+    <button onclick="func()">равняется...</button>
+   
+    <p id="result"></p>
+   
+    <script>
+       function func(){
+             var num1 = Number(document.getElementById("num1").value);
+             var num2 = Number(document.getElementById("num2").value);
+             var result = num1 + num2;
+   
+             document.getElementById("result").innerHTML = result;
+             }
+    </script> -->
+
+
+
+
+
 </body>
 </html>
