@@ -1,4 +1,3 @@
-alert('Hello world!');
 let plus, minus, divide, multiply;
 
 function initialize() {
@@ -35,16 +34,16 @@ function calculate(val1, val2){
     yVal = parseValue(val1, val2)[1];
 
     if(plus.selected){
-        return document.calc.answer.value = add(xValue, yValue);
+        return document.calc.answer.value = add(xVal, yVal);
     }
     else if(minus.selected){
-        return document.calc.answer.value = substract(xValue, yValue);
+        return document.calc.answer.value = substract(xVal, yVal);
     }
     else if(divide.selected){
-        return document.calc.answer.value = divider(xValue, yValue);
+        return document.calc.answer.value = divider(xVal, yVal);
     }
     else if(multiply.selected){
-        return document.calc.answer.value = multiplier(xValue, yValue);
+        return document.calc.answer.value = multiplier(xVal, yVal);
     }
 }
 
