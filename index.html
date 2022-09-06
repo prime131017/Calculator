@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body onload="initialize()">
 
     <div class="wrapper">
-        
+
         <form name = "calc" action="">
             <div class="container">
                 <div class="form-wrapper">
                     <div class="form-wrapper__item">
-                        <input type="text" id="val1" name="val1" placeholder="First value">
+                        <input type="text" id="val1" class="input" name="val1" placeholder="First value">
                     </div>
                     <div class="form-wrapper__item">
                         <select name="operator" class="custom-select" id="inputGroupSelect01">
@@ -26,7 +27,7 @@
                         </select>
                     </div>
                     <div class="form-wrapper__item">
-                        <input type="text" id="val2" name="val2" placeholder="Second value">
+                        <input type="text" id="val2" class="input" name="val2" placeholder="Second value">
                     </div>
                     <div class="form-wrapper__item">
                         <button type="button" class="btn" value="answer" onClick="calculate('val1','val2')">CALCULATE</button>
